@@ -202,5 +202,3 @@ Contributions are welcome!
 
 This project is licensed under the **MIT License**.
 You are free to use, modify, and distribute it with attribution.
-Do you want me to also generate the **`.gitignore`** and **requirements.txt** for the flat (no `src/`) layout so you can just copy-paste them in?
-```
