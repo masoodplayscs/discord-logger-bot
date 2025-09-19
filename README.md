@@ -1,36 +1,33 @@
 # 📝 Discord Logger Bot
 
-A Discord bot that logs **deleted, edited, and bulk-deleted messages** to dedicated channels.
+A Discord bot that logs **deleted, edited, and bulk-deleted messages** to dedicated channels.  
 Built with [discord.py](https://discordpy.readthedocs.io/), it uses slash commands for easy setup and management.
 
 ---
 
 ## ✨ Features
-
-* 🔒 **Configurable log channels** (`/setup`)
-* 🗑️ Logs **deleted messages** (with optional file if too long)
-* ✏️ Logs **edited messages** (before & after content)
-* 🧹 Logs **bulk deletions** (with text file export)
-* 🎭 **Role & text exemptions**
-* ⏸️ **Pause/unpause logging**
-* 🧪 `/testlog` for verifying setup
-* ⚙️ Saves settings per server in `config.json`
+- 🔒 **Configurable log channels** (`/setup`)
+- 🗑️ Logs **deleted messages** (with optional file if too long)
+- ✏️ Logs **edited messages** (before & after content)
+- 🧹 Logs **bulk deletions** (with text file export)
+- 🎭 **Role & text exemptions**
+- ⏸️ **Pause/unpause logging**
+- 🧪 `/testlog` for verifying setup
+- ⚙️ Saves settings per server in `config.json`
 
 ---
 
 ## 📂 Project Structure
-
 ```bash
 discord-logger-bot/
-│── src/
-│   └── bot.py          # Main bot code
-│── config.json         # Auto-generated per-server config
-│── .env.example        # Template for environment variables
-│── requirements.txt    # Python dependencies
-│── .gitignore          # Ignore unnecessary files
-│── README.md           # Documentation
-│── LICENSE             # License (MIT recommended)
-```
+│── main.py           # Main bot code
+│── config.json       # Auto-generated config
+│── .env.example      # Environment variable template
+│── requirements.txt  # Python dependencies
+│── .gitignore        # Ignore unnecessary files
+│── README.md         # Documentation
+│── LICENSE           # License (MIT recommended)
+````
 
 ---
 
@@ -100,7 +97,7 @@ DISCORD_BOT_TOKEN=your-bot-token-here
 ### 6️⃣ Run the Bot
 
 ```bash
-python src/bot.py
+python main.py
 ```
 
 If successful, the console will show:
@@ -184,7 +181,7 @@ You normally **don’t edit this manually** — use slash commands instead.
 * Ensure you ran the bot with the correct working directory:
 
   ```bash
-  python src/bot.py
+  python main.py
   ```
 
 ---
@@ -205,3 +202,5 @@ Contributions are welcome!
 
 This project is licensed under the **MIT License**.
 You are free to use, modify, and distribute it with attribution.
+Do you want me to also generate the **`.gitignore`** and **requirements.txt** for the flat (no `src/`) layout so you can just copy-paste them in?
+```
